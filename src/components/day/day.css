@@ -1,0 +1,14 @@
+.cube {
+    width: 100px;
+    height: 100px;
+    background-color:mediumturquoise;
+    flex-direction: column;
+    display: flex;
+    border: 1px solid;
+}
+
+.text-cube {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px;
+}
