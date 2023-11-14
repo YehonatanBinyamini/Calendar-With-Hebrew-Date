@@ -1,17 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 import "./day.css";
+import candle from "../../assets/images/candle.png";
 
-export default function Day({ LDate, HDate }) {
-  //const [LDate, setLDate] = useState("1");
-  // const [HDate, setHDate] = useState("א");
+export default function Day({ heDate, enDate, isDay, azcara }) {
 
-  return (
-    <div className="cube">
-      {/* <div className="text-cube">{LDate.String()}</div> */}
+function handlePressDay(){
+  azcara = "d";
+  console.log(enDate)
+}
+
+  return isDay ? (
+    <div className="cube" onClick={handlePressDay}>
       <div className="text-cube">
-        <label>{HDate}</label>
-        <label>{LDate}</label>
+        <label>{enDate}</label>
+        <label>{heDate}</label>
       </div>
+      {azcara && (
+        <div className="candle-container">
+          <img className="candleImg" src={candle} alt={"candle"} />
+        </div>
+      )}
     </div>
+  ) : (
+    <div className="empty-cube"></div>
   );
 }

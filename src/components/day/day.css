@@ -1,14 +1,33 @@
 .cube {
-    width: 100px;
-    height: 100px;
-    background-color:mediumturquoise;
+    width: 90px;
+    height: 90px;
+    background-color:rgb(206, 243, 242);
     flex-direction: column;
     display: flex;
-    border: 1px solid;
+    border: 1px solid rgb(163, 162, 162);
+    box-sizing: border-box;
 }
 
 .text-cube {
     display: flex;
     justify-content: space-between;
     margin: 4px;
+    font-weight: 600;
 }
+
+.empty-cube {
+    width: 90px;
+    height: 90px;
+}
+
+.candle-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.candleImg {
+    width: 20px;
+    height: 45px;
+  }
+  
+ 

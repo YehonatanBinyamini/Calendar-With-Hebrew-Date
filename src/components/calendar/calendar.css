@@ -1,6 +1,48 @@
 .calendar-board {
     display: flex;
-    width: 700px;
-    height: 500px;
-    border: 1px solid;
+    flex-direction: row-reverse;
+    width: 644px;
+    height: 540px;
+    /* border: 1px solid; */
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.week-days{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.label-text {
+    font-size: 30;
+    font-weight: 600;
+}
+
+.month-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.en-date-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.he-date-title{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn{
+    margin: 1px;
+    padding-top: 5px;
 }
