@@ -86,7 +86,7 @@ function getHebrewYear(number) {
 
 function getHebrewMonthName(heDateObj, year, month, date) {
   if (heDateObj.month === 6) {
-    const nextMonth = new Date(year, month + 1, date + 2);
+    const nextMonth = new Date(year, month + 1, heDateObj.date > 27 ? date-2 : date + 2);
     const nextHeMonth = HebrewDate(
       nextMonth.getFullYear(),
       nextMonth.getMonth() + 1,
